@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <script src="/static/js/jquery/jquery.min.js"></script>
+    <script src="/static/js/jquery/jquery_mask.js"></script>
+    <script src="/static/js/main.js"></script>
+    <title>Practice</title>
+</head>
+
+<body>
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="1" placeholder="USD BASED ISE">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="2" placeholder="SP">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="3" placeholder="DAX">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="4" placeholder="FTSE">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="5" placeholder="NIKKEI">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="6" placeholder="BOVESPA">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="7" placeholder="EU">
+    <input onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');" id="8" placeholder="EM">
+    <button onclick="get_prediction()">Predict
+    </button>
+<hr>
+TL BASED ISE: <div id="result-value"></div>
+</body>
+</html>
